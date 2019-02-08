@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  background-color: #034FC9;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 13px;
+  color: #d2d8e0;
+  font-weight: 600;
+  /* position: sticky; */
+}
+.nav-left img{
+  width: 200px;
+}
+nav span{
+  margin-left: 20px;
+}
+nav span:hover{
+  color: white;
+}
+header{
+  background-image: url("img/blueback.svg");
+  background-size: cover;
+  padding: 80px 0;
+}
+.claim{
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.claim h1{
+  font-size: 60px;
+  font-weight: 800;
+}
+.modulo{
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+.modulo *{
+  width: 90%;
+}
+.modulo .white{
+  font-size: 30px;
+  color: #022670;
+  font-weight: 700;
+}
+.modulo .blue{
+  color: #0069FF;
+  font-size: 30px;
+  font-weight: 700;
+}
+.create-account, .sign-up{
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.create-account{
+  background: #0069FF;
+  color: white;
+}
+.sign-up{
+  border: 1px solid grey;
+  color: #757575;
+}
+.modulo input{
+  height: 50px;
+  border: 1px solid lightgrey;
+  margin: 10px auto;
+}
+#agree{
+  font-size: 10px;
+}
+.partner{
+  text-align: center;
+  background: #F3F5F9;
+  padding: 50px 0;
+  font-weight: 600;
+}
+.partner-logo img{
+  width: 150px;
+  margin: auto 15px;
+}
+.partner>p{
+  color: #93979b;
+}
+.partner>span, i{
+  color: #0069ff;
+}
