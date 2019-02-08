@@ -3,8 +3,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
-.container{
-
+.nav-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,4 +97,17 @@ header{
 }
 .partner>span, i{
   color: #0069ff;
+}
+.title-cont{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.deploy{
+  padding: 15px 25px;
+  border-left: 2px solid lightgrey;
+}
+#selected-blue{
+  border-left: 2px solid blue;
+  color: blue;
 }
