@@ -15,7 +15,9 @@ nav{
   font-size: 13px;
   color: #d2d8e0;
   font-weight: 600;
-  /* position: sticky; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .nav-left img{
   width: 200px;
@@ -25,6 +27,9 @@ nav span{
 }
 nav span:hover{
   color: white;
+}
+nav i{
+  color: #d2d8e0;
 }
 header{
   background-image: url("img/blueback.svg");
@@ -45,7 +50,7 @@ header{
   width: 100%;
   border-radius: 5px;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
 .modulo *{
   width: 90%;
@@ -73,11 +78,21 @@ header{
 .sign-up{
   border: 1px solid grey;
   color: #757575;
+  position: relative;
+}
+.sign-up>img{
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
 }
 .modulo input{
   height: 50px;
   border: 1px solid lightgrey;
   margin: 10px auto;
+  padding-left: 15px;
 }
 #agree{
   font-size: 10px;
@@ -102,12 +117,105 @@ header{
   width: 70%;
   text-align: center;
   margin: auto;
+  padding: 15px 0 45px 0;
 }
-.deploy{
+.deploy-section{
+  padding: 100px 0;
+  color: #4E5F83;
+}
+.item-list{
   padding: 15px 25px;
   border-left: 2px solid lightgrey;
+  line-height: 2;
+  font-weight: 600;
 }
 #selected-blue{
   border-left: 2px solid blue;
   color: blue;
+}
+.wd-table{
+  width: 60%;
+}
+.blue-h2{
+  font-size: 35px;
+  color: #031B73;
+  font-weight: bold;
+  text-align: center;
+}
+.sub-title{
+  color: #4E5F83;
+  font-size: 20px;
+  text-align: center;
+}
+.right-section img{
+  margin-bottom: 20px;
+}
+.blue-h5{
+    color: #031B73;
+    font-weight: bold;
+    font-size: 1em;
+}
+.left-section{
+  margin-bottom: 30px;
+}
+.screen-section{
+  background-color: #F3F5F9;
+  text-align: center;
+  padding: 50px 0;
+}
+.screen-img img{
+  max-width: 60%;
+  padding-bottom: 50px;
+}
+.screen-img{
+  margin: 35px 0;
+}
+.dot{
+  display: inline-block;
+  border: 2px solid blue;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+#filled-dot{
+  background: blue;
+}
+.feature-title{
+  margin-bottom: 40px;
+}
+.object img{
+  margin: 15px 0;
+}
+.feature{
+  padding: 100px 0;
+}
+.world-map{
+  background-image: url("img/map.svg"), linear-gradient(#0047c6 0,#001d99);
+  background-size: cover;
+  padding: 100px 0;
+}
+.map-title h2{
+  color: white;
+  font-weight: 800;
+}
+.city{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  align-items: center;
+  height: 50px;
+
+}
+.city-name{
+  font-weight: 600;
+  color: white;
+}
+.city span{
+  color: lightgrey;
+}
+#no-border{
+  border: none;
+}
+.region{
+  margin: 50px 0;
 }

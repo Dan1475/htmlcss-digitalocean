@@ -12,32 +12,36 @@
   <body>
     <!-- inizio nav -->
     <nav>
-      <div class="nav-section">
+      <div class="container">
+       <div class="nav-section">
         <div class="nav-left">
           <img src="img/logo.png" alt="">
           <span>Product</span>
-          <span>Product</span>
-          <span>Product</span>
-          <span>Product</span>
-
+          <i class="fas fa-angle-down"></i>
+          <span>Costumers</span>
+          <span>Community</span>
+          <i class="fas fa-angle-down"></i>
+          <span>Pricing</span>
         </div>
+
         <div class="nav-right">
-          <span>Product</span>
-          <span>Product</span>
-          <span>Product</span>
-
+          <span>Docs</span>
+          <span>Support</span>
+          <i class="fas fa-angle-down"></i>
+          <span>Login</span>
         </div>
+       </div>
       </div>
     </nav>
     <!-- inizio header -->
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-6 claim">
+          <div class="col-md-12 col-lg-7 claim">
             <h1>The simplest cloud platform for developers & teams</h1>
             <span>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you’re running one virtual machine or ten thousand.</span>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-5">
             <div class="modulo">
               <p class="white">Deploy your app in seconds.</p>
               <p class="blue">Get started now.</p>
@@ -47,9 +51,10 @@
                 <span>Create an Account</span>
               </div>
               <div class="sign-up">
+                <img src="img/google.png" alt="">
                 <span>Sign Up With Google</span>
               </div>
-              <span id="agree">By signing up you agree to the Terms of Service.</span>
+              <span id="agree">By signing up you agree to the <a href="#">Terms of Service.</a></span>
             </div>
           </div>
         </div>
@@ -73,60 +78,232 @@
 
       <div class="deploy-section">
         <div class="title-cont">
-         <h2>Deploy and scale seamlessly</h2>
-         <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+          <h2 class="blue-h2">Deploy and scale seamlessly</h2>
+          <p class="sub-title">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
         </div>
-        <div class="container">
+        <div class="container wd-table">
           <div class="row">
-            <div class="col-lg-5 left-section">
-              <div class="deploy" id="selected-blue">
-                <span>deploy</span>
+            <div class="col-lg-4 left-section">
+              <div class="item-list" id="selected-blue">
+                <span>Deploy</span>
               </div>
-              <div class="deploy">
-                <span>deploy</span>
+              <div class="item-list">
+                <span>Manage</span>
               </div>
-              <div class="deploy">
-                <span>deploy</span>
+              <div class="item-list">
+                <span>Secure</span>
               </div>
-              <div class="deploy">
-                <span>deploy</span>
+              <div class="item-list">
+                <span>Scale</span>
+              </div>
+              <div class="item-list">
+                <span>Monitor</span>
               </div>
             </div>
-            <div class="col-lg-7 right-section">
+            <div class="col-lg-8 right-section">
               <div class="row">
-                <div class="col">
+                <div class="col-6">
                   <div class="up">
                     <img src="img/item1.svg" alt="">
-                    <p>ciaisica</p>
-                    <p>ciasioascoa</p>
-                  </div>
-                  <div class="down">
-                    <img src="img/item1.svg" alt="">
-                    <p>ciaisica</p>
-                    <p>ciasioascoa</p>
+                    <h5 class="blue-h5">Cluster deployments</h5>
+                    <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="up">
-                    <img src="img/item1.svg" alt="">
-                    <p>ciaisica</p>
-                    <p>ciasioascoa</p>
-                  </div>
+                <div class="col-6">
                   <div class="down">
-                    <img src="img/item1.svg" alt="">
-                    <p>ciaisica</p>
-                    <p>ciasioascoa</p>
+                    <img src="img/item2.svg" alt="">
+                    <h5 class="blue-h5">One-click apps</h5>
+                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                   </div>
                 </div>
 
+                <div class="col-6">
+                  <div class="up">
+                    <img src="img/item3.svg" alt="">
+                    <h5 class="blue-h5">Optimized compute types</h5>
+                    <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="down">
+                    <img src="img/item4.svg" alt="">
+                    <h5 class="blue-h5">Global availability</h5>
+                    <p>Deploy to any of our data center regions around the world.</p>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen-section">
+        <div class="container">
+          <div class="screen-title">
+            <h2 class="blue-h2">Designed for Developers</h2>
+            <p class="sub-title">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+          </div>
+          <div class="screen-img">
+            <i class="fas fa-angle-left fa-3x"></i>
+            <img src="img/screen.jpg" alt="">
+            <i class="fas fa-angle-right fa-3x"></i><br>
+            <span>Create compute servers in 55 seconds or less.</span>
+          </div>
+          <div class="blue-dot">
+            <div id="filled-dot" class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-title">
+          <h2 class="blue-h2">The features your business needs</h2>
+        </div>
+        <div class="container">
+         <div class="row">
+          <div class="object col-6 col-md-4">
+            <img src="img/item5.svg" alt="">
+            <h5 class="blue-h5">Predictable pricing</h5>
+            <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+            <a href="#">Pricing</a>
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="object col-6 col-md-4">
+            <img src="img/item6.svg" alt="">
+            <h5 class="blue-h5">World-class service</h5>
+            <p>Free round-the-clock technical support for all customers. You’ll feel the love.</p>
+            <a href="#">Support</a>
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="object col-6 col-offset-3 col-md-4 ">
+            <img src="img/item7.svg" alt="">
+            <h5 class="blue-h5">Reliable platform</h5>
+            <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+            <a href="#">Security</a>
+            <i class="fas fa-angle-right"></i>
+          </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="world-map">
+        <div class="map-title text-center">
+          <h2>Service your customers around the world from 12 regions.</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col region">
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div id="no-border" class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col region">
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+              <div id="no-border" class="city">
+                <span class="city-name">AMS2</span>
+                <span>Amsterdam, Netherlands</span>
+                <div class="link">
+                 <a href="#">Test speed</a>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+
 
             </div>
           </div>
         </div>
-
       </div>
+
+
 
     </main>
     <!-- inizio footer -->
